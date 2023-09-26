@@ -1,0 +1,100 @@
+
+.start-div {
+    text-align: center;
+    margin-top: 5vw; 
+}
+
+
+.game-div {
+    display: none; 
+    text-align: center;
+    margin-top: 5vw; /
+}
+.butuns{
+    display: grid;
+    align-items: center;
+    
+    justify-content:center;
+    height: 50vh;
+
+}
+.grid {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5vw; /* Responsive gap between cells */
+    margin: 0 auto; /* Center-align the grid */
+    width: 31.6vw; /* Responsive grid width */
+    border: 0.2vw solid black; /* Responsive border */
+}
+
+.cell {
+    width: 10vw; /* Responsive cell width */
+    height: 10vw; /* Responsive cell height */
+    border: 0.1vw solid black; /* Responsive border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw; /* Responsive font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.btn {
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: auto;
+   
+}
+.sumit{
+    width: 99vw;
+    margin: auto;
+    margin-top: 5vh;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.level{
+    display: none;
+}
+.winning-cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: transform 1s ease-in-out; 
+    transform: scale(1.2);
+}
+.mater{
+    font-size: 3vw;
+}
+.submit-btn {
+    
+    margin-left: auto;
+    margin-top: 10vw; /* Added space between grid and submit button */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .game-div{
+        margin-top: 15vh;
+    }
+     .sumit{
+        margin-top: 10vh;
+     }
+     .btn{
+        width: 20vw;
+     }
+    .start-div{
+        margin-top: 15vh;
+    }
+    .grid {
+        width: 68vw; /* Adjust grid width for smaller screens */
+    }
+
+    .cell {
+        width: 22vw; 
+        height: 22vw;
+        font-size: 6vw;
+    }
+}
