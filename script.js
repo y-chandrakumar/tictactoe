@@ -45,7 +45,7 @@ function checkGameOver() {
             cels[b].classList.add("winning-cell");
             cels[c].classList.add("winning-cell");
                 isGameOver = true;
-                matter.innerHTML=cels[a].textContent+"'s  won";
+                matter.innerHTML=cels[a].textContent+"'s  Won";
                 console.log("player",cels[a].textContent,"won");
                 
 
@@ -58,7 +58,7 @@ function checkGameOver() {
                        cels[b].classList.remove("winning-cell");
                        cels[c].classList.remove("winning-cell");
                        currentPlayer="X";
-                       matter.innerHTML=currentPlayer+"'s  turn";
+                       matter.innerHTML=currentPlayer+"'s  Turn";
                 },2000)
                 return; 
             }
@@ -74,7 +74,7 @@ function checkGameOver() {
                 cels[i].textContent="";
             }
             currentPlayer="X";
-            matter.innerHTML=currentPlayer+"'s  turn";
+            matter.innerHTML=currentPlayer+"'s  Turn";
             return;
         
 
